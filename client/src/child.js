@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import SubChild from './subChild';
 import './App.css';
 
 class Child extends Component {
@@ -7,7 +7,7 @@ class Child extends Component {
   constructor(){
     super();
     this.state = {
-      name: "Avanya"
+      sub: "Arun"
     }
     console.log("Child Constructor");
   }
@@ -25,15 +25,15 @@ class Child extends Component {
     console.log("Child componentWillReceiveProps");
   }
   
-  shouldComponentUpdate(){
+ /* shouldComponentUpdate(){
     return false;
-  }
+  }*/
 
   render() {
     console.log("Child render");
     return (
       <div className="App">
-      Child Component:  {this.props.name}
+      <SubChild name ={this.props.name}  state={this.state.sub}></SubChild>
       </div>
     );
   }

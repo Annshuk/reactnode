@@ -5,8 +5,8 @@ class NewsItemListing extends Component {
     render() {
         return (
             <div>
-                <div><b>{this.props.title}</b></div>
-                <div>{this.props.teaser}</div>
+                <b>{this.props.title}</b>
+                <p>{this.props.teaser}</p>
             </div>
         )
     }

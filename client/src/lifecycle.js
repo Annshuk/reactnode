@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Child from './child';
 
-class App extends Component {
+class LifeCycle extends Component {
  
   constructor(){
     super();
@@ -22,18 +22,20 @@ class App extends Component {
   componentWillReceiveProps(){
     console.log('componentWillReceiveProps')
   }
-  changeState(){
-    this.setState({name: 'Avanya'})
-  }
+  
   componentWillUpdate(){
     console.log('componentWillUpdate')
   }
   shouldComponentUpdate(){
     return true;
   }
+  
+  changeState(){
+    this.setState({name: 'Avanya'})
+  }
 
   render() {
-    console.log("render");
+    console.log("parent render");
     return (
       <div className="App">
       Name:  {this.state.name}
@@ -44,4 +46,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default LifeCycle;

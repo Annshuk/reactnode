@@ -1,8 +1,10 @@
-import actionTypes from '../constants/actionTypes';
+import constant from './action-types';
 
 function newsReceived(news){
     return {
-        type: actionTypes.NEWS_RECEIVED,
+        type: constant.NEWS_RECEIVED,
         news: news
     }
 }
+
+export default newsReceived;
