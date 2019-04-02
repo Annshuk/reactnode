@@ -1,0 +1,28 @@
+{
+  "userId": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "users": [{
+    "id":1,
+    "name": "Anshuk Sharma",
+    "admin": false,
+    "leaves": 23,
+    "holidays": 5,
+    "leaveRequest": 2,
+    "leaveApplied": 3
+  },
+   {
+    "id":2,
+    "admin": false,
+    "name": "Ankit Chauhan",
+    "leaves": 19,
+    "holidays": 5,
+    "leaveRequest": 2,
+    "leaveApplied": 3
+  }
+],
+  "string": "Hello World"
+}
