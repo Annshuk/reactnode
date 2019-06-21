@@ -20,9 +20,9 @@
     "name": "Ankit Chauhan",
     "leaves": 19,
     "holidays": 5,
-    "leaveRequest": 2,
+    "leaveRequest": 1,
     "leaveApplied": 3
   }
 ],
-  "string": "Hello World"
+  "textString": "Hello World"
 }
